@@ -1,0 +1,137 @@
+/*外部容器*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+ 
+/*整体列表*/
+.carts-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 40rpx;
+}
+
+/*复选框样式*/
+.carts-list icon {
+  margin-top: 60rpx;
+  margin-right: 20rpx;
+}
+ 
+/*每行单元格*/
+.carts-item {
+  display: flex;
+  flex-direction: row;
+  height:150rpx;
+  width:100%;
+  border-bottom: 1px solid #eee;
+  padding: 30rpx 0;
+}
+ 
+/*左部图片*/
+.carts-image {
+  width:150rpx;
+  height:150rpx;
+}
+ 
+ 
+/*右部描述*/
+.carts-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ 
+/*右上部分标题*/
+.carts-title {
+  margin: 10rpx;
+  font-size: 30rpx;
+}
+ 
+/*右下部分价格与数量*/
+.carts-subtitle {
+  font-size: 25rpx;
+  color:darkgray;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+/*加减数量*/
+.stepper {
+  border: 1px solid #ccc; 
+  border-radius: 3px; 
+  width: 70px; 
+  height: 28px; 
+  margin:0 auto;
+}
+.stepper text {
+   width: 19px; 
+   height: 28px; 
+   line-height: 28px; 
+   text-align: center; 
+   float: left;
+}
+.stepper input { 
+  float: left; 
+  margin: 0 auto; 
+  width: 30px; 
+  text-align: center; 
+  font-size: 12px; 
+  border-left: 1px solid #ccc; 
+  border-right: 1px solid #ccc;
+
+}
+.stepper .normal{ 
+  color: black;
+  }
+  
+ 
+/*价格*/
+.carts-price {
+  color: #f60;
+}
+
+/*底部按钮*/
+.carts-footer {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #eee;
+}
+ 
+/*复选框*/
+.carts-footer icon {
+  margin-left: 20rpx;
+}
+ 
+/*全选字样*/
+.carts-footer text {
+  font-size: 30rpx;
+  margin-left: 8rpx;
+  line-height: 10rpx;
+}
+ 
+/*立即结算按钮*/
+.carts-footer .button {
+  line-height: 80rpx;
+  text-align: center;
+  width:220rpx;
+  height: 80rpx;
+  background-color: #f60;
+  color: white;
+  font-size: 36rpx;
+  border-radius: 0;
+  border: 0;
+}
+.carts-footer .prick{
+    color: red;
+    
+}

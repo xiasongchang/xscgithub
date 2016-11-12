@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<!--轮播 -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{images}}">
+    <swiper-item>
+      <image src="{{item.img_path}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!--标签 -->
+<view class="navs">
+      <block wx:for-items="{{navs}}" wx:key="name">
+<view class="nav-item" catchtap="catchTapCategory" data-type="{{item.name}}">
+          <image src="{{item.icon}}" class="nav-image"/>
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+</view>
+<!--商城客户 -->   
+<text class="zi">商城客户</text>
+  <view class="customer">
+    <block wx:for-items="{{customer}}" wx:key="name">
+      <view class="custo-item" catchtap="catchTapCategory" data-type="{{item.name}}">
+      <image src="{{item.img_path}}" class="custo-image"/>
+      <text>{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+  <!--精选促销 -->
+  <text class="zi">精选促销</text>
+  <view class="promotion">
+    <block wx:for-items="{{promotion}}" wx:key="name">
+      <view class="promo-item" catchtap="catchTapCategory" data-type="{{item.name}}">
+      <image src="{{item.img_path}}" class="promo-image"/>
+      <text>{{item.title}}</text>
+      <text class="jia">{{item.prick}}</text>
+      </view>
+    </block>
+  </view>   
