@@ -1,0 +1,1 @@
+{"code":"200","message":"success","data":[{"id":1,"imgs":"public\/img\/banner1.png"},{"id":12,"imgs":"public\/img\/banner6.jpg"},{"id":11,"imgs":"public\/img\/banner5.jpg"},{"id":10,"imgs":"public\/img\/banner4.jpg"},{"id":9,"imgs":"public\/img\/banner3.jpg"},{"id":8,"imgs":"public\/img\/banner2.png"}]}
